@@ -27,16 +27,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/ivMoodPicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/menuLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMoodHeader" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menuLayout"
         android:layout_width="match_parent"
@@ -88,6 +78,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDrink" />
@@ -115,6 +106,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -177,6 +169,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_corners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -199,16 +192,18 @@
 
     <Button
         android:id="@+id/btTrack"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
 
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/button"
         android:fontFamily="@font/blogger_sans_bold"
+
         android:text="@string/track_it"
         android:textAllCaps="false"
-
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/menuLayout"
