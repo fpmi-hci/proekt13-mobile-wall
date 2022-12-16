@@ -14,4 +14,9 @@ class DiaryActivity : AppCompatActivity() {
 
         menuButtons = MenuButtonsSetuper.setupMenuButtons(this@DiaryActivity)
     }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(0, 0)
+    }
 }

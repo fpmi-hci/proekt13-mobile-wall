@@ -24,4 +24,5 @@
     <string name="track_label_location">Where did you drink it?</string>
     <string name="track_label_mark">How did you enjoy it?</string>
     <string name="track_success">Successfully tracked</string>
+    <string name="your_coffee_is">Your coffee is</string>
 </resources>

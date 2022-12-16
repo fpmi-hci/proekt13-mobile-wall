@@ -25,4 +25,5 @@
     <string name="track_label_location">Де ви пили?</string>
     <string name="track_label_mark">Ваша оцінка</string>
     <string name="track_success">Успішно записано</string>
+    <string name="your_coffee_is">Ваша кава</string>
 </resources>

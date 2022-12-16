@@ -17,7 +17,7 @@
         android:fontFamily="@font/blogger_sans_bold"
         android:padding="10dp"
 
-        android:text="Your coffee is"
+        android:text="@string/your_coffee_is"
         android:textAlignment="center"
         android:textSize="12pt"
 

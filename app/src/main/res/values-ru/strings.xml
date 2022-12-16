@@ -25,4 +25,5 @@
     <string name="track_label_location">Где вы пили?</string>
     <string name="track_label_size">Какого размера был напиток?</string>
     <string name="track_label_drink">Что вы пили?</string>
+    <string name="your_coffee_is">Ваш кофе</string>
 </resources>
