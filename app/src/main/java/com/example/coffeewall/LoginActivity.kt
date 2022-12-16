@@ -1,14 +1,13 @@
 package com.example.coffeewall
 
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.view.WindowInsets
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
 
 class LoginActivity : AppCompatActivity() {
     var isLogin: Boolean = true
@@ -27,21 +26,28 @@ class LoginActivity : AppCompatActivity() {
         tvModeLabel = findViewById(R.id.tvModeLabel)
 
         btLogInRegister = findViewById(R.id.btLogInRegister)
+        btLogInRegister.setOnClickListener { v -> onLoginClick(v) }
         btSwitchMode = findViewById(R.id.btSwitchLoginMode)
         btSwitchMode.setOnClickListener { v -> onChangeModeClick(v) }
     }
 
-    fun onChangeModeClick(v: View) {
+    private fun onLoginClick(v: View) {
+        val mainActivityIntent = Intent(this@LoginActivity, MainActivity::class.java)
+        this@LoginActivity.startActivity(mainActivityIntent)
+        finish()
+    }
+
+    private fun onChangeModeClick(v: View) {
         isLogin = !isLogin
         if (isLogin) {
             editConfirm.visibility = View.GONE
-            btLogInRegister.text = "Log In"
-            btSwitchMode.text = "Register!"
-            tvModeLabel.text = "Don't Have an Account?"
+            btLogInRegister.text = getString(R.string.log_in)
+            btSwitchMode.text = getString(R.string.register)
+            tvModeLabel.text = getString(R.string.dont_have_an_account)
         } else {
-            tvModeLabel.text = "Already Got an Account?"
-            btLogInRegister.text = "Sign Up"
-            btSwitchMode.text = "Sign In!"
+            tvModeLabel.text = getString(R.string.already_got_account)
+            btLogInRegister.text = getString(R.string.sign_up)
+            btSwitchMode.text = getString(R.string.log_in)
             editConfirm.visibility = View.VISIBLE
         }
     }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coffee Wall</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="dont_have_an_account">Нет аккаунта?</string>
+    <string name="log_in">Войти</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="password">Пароль</string>
+    <string name="login">Имя пользователя</string>
+    <string name="fill_your_coffee_cup">Наполни свою чашку кофе</string>
+    <string name="track_it">Записать к выпитым</string>
+    <string name="refill_the_cup">Наполнить чашку заново</string>
+    <string name="get_drink_of_your_mood">Получить напиток своего настроения</string>
+    <string name="diary">Дневник</string>
+    <string name="track_your_drink">Запиши, что ты выпил</string>
+    <string name="coffee_book">Справочник</string>
+    <string name="back_to_home">Назад</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="already_got_account">Уже есть аккаунт?</string>
+    <string name="track_select_drink">Сначала выберите напиток</string>
+    <string name="track_select_size">Сначала выберите размер</string>
+    <string name="track_select_mark">Сначала оцените напиток</string>
+    <string name="track_success">Успешно записано</string>
+    <string name="track_label_mark">Ваша оценка</string>
+    <string name="track_label_location">Где вы пили?</string>
+    <string name="track_label_size">Какого размера был напиток?</string>
+    <string name="track_label_drink">Что вы пили?</string>
+</resources>

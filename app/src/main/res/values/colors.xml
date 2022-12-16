@@ -3,7 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="header">#F4DBBE</color>
     <color name="button">#935F4E</color>
+    <color name="inactive">#80000000</color>
     <color name="primary_button">#763737</color>
+    <color name="active_button">#F4E48D</color>
     <color name="background">#DAA689</color>
 </resources>
