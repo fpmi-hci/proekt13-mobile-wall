@@ -6,22 +6,30 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
 class LoginActivity : AppCompatActivity() {
+    val users = setOf(Pair("Kate", "kate"), Pair("Zmitser", "zmitser"))
+
     var isLogin: Boolean = true
 
-    lateinit var editConfirm: EditText
-    lateinit var tvModeLabel: TextView
+    private lateinit var editLogin: EditText
+    private lateinit var editPassword: EditText
 
-    lateinit var btLogInRegister: Button
-    lateinit var btSwitchMode: Button
+    private lateinit var editConfirm: EditText
+    private lateinit var tvModeLabel: TextView
+
+    private lateinit var btLogInRegister: Button
+    private lateinit var btSwitchMode: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        editLogin = findViewById(R.id.editLogin)
+        editPassword = findViewById(R.id.editPassword)
         editConfirm = findViewById(R.id.editConfirm)
         tvModeLabel = findViewById(R.id.tvModeLabel)
 
@@ -32,6 +40,28 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun onLoginClick(v: View) {
+        val enteredLogin = editLogin.text.toString()
+        val enteredPassword = editPassword.text.toString()
+        val enteredConfirm = editConfirm.text.toString()
+
+        if (enteredLogin.isBlank() || enteredPassword.isBlank()) {
+            Toast.makeText(this, getString(R.string.blank_login_password), Toast.LENGTH_SHORT)
+                .show()
+            return
+        }
+
+        if (isLogin && !users.contains(Pair(enteredLogin, enteredPassword))) {
+            Toast.makeText(this, getString(R.string.wrong_credentials), Toast.LENGTH_SHORT)
+                .show()
+            return
+        }
+
+        if (!isLogin && enteredConfirm != enteredPassword) {
+            Toast.makeText(this, getString(R.string.passwords_not_match), Toast.LENGTH_SHORT)
+                .show()
+            return
+        }
+
         val mainActivityIntent = Intent(this@LoginActivity, MainActivity::class.java)
         this@LoginActivity.startActivity(mainActivityIntent)
         finish()

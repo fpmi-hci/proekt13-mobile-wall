@@ -26,4 +26,7 @@
     <string name="track_label_mark">Ваша адзнака</string>
     <string name="track_success">Паспяхова запісана</string>
     <string name="your_coffee_is">Ваша кава</string>
+    <string name="wrong_credentials">Няправільныя даныя</string>
+    <string name="blank_login_password">Вы павінны ўвесці лагін і пароль</string>
+    <string name="passwords_not_match">Паролі не супадаюць</string>
 </resources>

@@ -26,4 +26,7 @@
     <string name="track_label_size">Какого размера был напиток?</string>
     <string name="track_label_drink">Что вы пили?</string>
     <string name="your_coffee_is">Ваш кофе</string>
+    <string name="wrong_credentials">Неправильные данные</string>
+    <string name="blank_login_password">Вы должны ввести логин и пароль</string>
+    <string name="passwords_not_match">Пароли не совпадают</string>
 </resources>

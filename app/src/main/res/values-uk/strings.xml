@@ -26,4 +26,7 @@
     <string name="track_label_mark">Ваша оцінка</string>
     <string name="track_success">Успішно записано</string>
     <string name="your_coffee_is">Ваша кава</string>
+    <string name="wrong_credentials">Неправильні дані</string>
+    <string name="blank_login_password">Ви повинні ввести логін та пароль</string>
+    <string name="passwords_not_match">Паролі не збігаються</string>
 </resources>

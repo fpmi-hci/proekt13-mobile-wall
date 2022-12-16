@@ -25,4 +25,7 @@
     <string name="track_label_mark">How did you enjoy it?</string>
     <string name="track_success">Successfully tracked</string>
     <string name="your_coffee_is">Your coffee is</string>
+    <string name="wrong_credentials">Wrong credentials</string>
+    <string name="blank_login_password">You should enter your login and password</string>
+    <string name="passwords_not_match">Passwords do not match</string>
 </resources>
