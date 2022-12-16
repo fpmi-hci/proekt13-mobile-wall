@@ -123,9 +123,9 @@ class DrinkByMoodActivity : AppCompatActivity() {
         val resultIntent = Intent(this@DrinkByMoodActivity, DrinkByMoodResultActivity::class.java)
         resultIntent.putExtra("stages", moodStages)
         resultIntent.putExtra("selected", selectedOptions)
-        finish()
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         this@DrinkByMoodActivity.startActivity(resultIntent)
+        finish()
     }
 
     private fun moveCriteriaPicture(v: View, e: MotionEvent): Boolean {
