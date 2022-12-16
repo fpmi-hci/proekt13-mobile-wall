@@ -17,8 +17,10 @@ class CoffeeBookItemAdapter internal constructor(context: Context?, data: List<D
     private val mData: List<Drink>
     private val mInflater: LayoutInflater
     private var mClickListener: ItemClickListener? = null
+    private val mContext: Context
 
     init {
+        mContext = context!!
         mInflater = LayoutInflater.from(context)
         mData = data
     }
@@ -31,7 +33,7 @@ class CoffeeBookItemAdapter internal constructor(context: Context?, data: List<D
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val drink = mData[position]
         holder.tvDrinkName.text = drink.name
-        holder.tvCalories.text = String.format("%d calories", drink.calories)
+        holder.tvCalories.text = String.format(mContext.getString(R.string.сalories), drink.calories)
         holder.tvDescription.text = drink.description
         populateCollectionsLayout(holder.layoutCoffeeBookCollections, drink.collections)
     }
@@ -82,7 +84,6 @@ class CoffeeBookItemAdapter internal constructor(context: Context?, data: List<D
         }
     }
 
-    // convenience method for getting data at click position
     fun getItem(id: Int): String {
         return mData[id].name
     }

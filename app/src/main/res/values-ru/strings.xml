@@ -29,4 +29,5 @@
     <string name="wrong_credentials">Неправильные данные</string>
     <string name="blank_login_password">Вы должны ввести логин и пароль</string>
     <string name="passwords_not_match">Пароли не совпадают</string>
+    <string name="сalories">Калорий: %d</string>
 </resources>
