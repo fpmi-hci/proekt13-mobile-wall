@@ -30,4 +30,5 @@
     <string name="blank_login_password">Вы павінны ўвесці лагін і пароль</string>
     <string name="passwords_not_match">Паролі не супадаюць</string>
     <string name="сalories">Калорый: %d</string>
+    <string name="track_a_new_drink">Запісаць яшчэ</string>
 </resources>

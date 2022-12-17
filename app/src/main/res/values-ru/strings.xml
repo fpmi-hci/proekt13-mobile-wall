@@ -30,4 +30,5 @@
     <string name="blank_login_password">Вы должны ввести логин и пароль</string>
     <string name="passwords_not_match">Пароли не совпадают</string>
     <string name="сalories">Калорий: %d</string>
+    <string name="track_a_new_drink">Записать ещё</string>
 </resources>
