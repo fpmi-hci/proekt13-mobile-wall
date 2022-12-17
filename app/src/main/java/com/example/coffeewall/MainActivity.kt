@@ -1,7 +1,6 @@
 package com.example.coffeewall
 
 import android.content.Intent
-import android.icu.lang.UCharacter.GraphemeClusterBreak.V
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AlphaAnimation

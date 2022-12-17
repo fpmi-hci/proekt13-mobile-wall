@@ -51,13 +51,17 @@ class CoffeeBookActivity : AppCompatActivity() {
         menuButtons = MenuButtonsSetuper.setupMenuButtons(this@CoffeeBookActivity)
 
         rvDrinks = findViewById(R.id.rvDrinks)
+        setupRecycleView(rvDrinks)
+    }
+
+    private fun setupRecycleView(rv: RecyclerView) {
         val layoutManager = LinearLayoutManager(this@CoffeeBookActivity)
-        rvDrinks.layoutManager = layoutManager
-        rvDrinks.adapter = CoffeeBookItemAdapter(this@CoffeeBookActivity, drinks)
+        rv.layoutManager = layoutManager
+        rv.adapter = CoffeeBookItemAdapter(this@CoffeeBookActivity, drinks)
         val dividerItemDecoration =
-            DividerItemDecoration(rvDrinks.context, layoutManager.orientation)
+            DividerItemDecoration(rv.context, layoutManager.orientation)
         dividerItemDecoration.setDrawable(resources.getDrawable(R.drawable.drinks_divider, null))
-        rvDrinks.addItemDecoration(dividerItemDecoration)
+        rv.addItemDecoration(dividerItemDecoration)
     }
 
     override fun onPause() {

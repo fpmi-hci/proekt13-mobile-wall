@@ -29,4 +29,5 @@
     <string name="blank_login_password">You should enter your login and password</string>
     <string name="passwords_not_match">Passwords do not match</string>
     <string name="сalories">%d calories</string>
+    <string name="track_a_new_drink">Track a new drink</string>
 </resources>

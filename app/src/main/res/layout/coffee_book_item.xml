@@ -74,13 +74,13 @@ But I will write it anyway, just to test multiline output."
 
         <HorizontalScrollView
             android:id="@+id/scrollCoffeeBookCollections"
-            android:background="@android:color/transparent"
-
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
             android:fillViewport="true"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,13 +89,12 @@ But I will write it anyway, just to test multiline output."
 
             <LinearLayout
                 android:id="@+id/layoutCoffeeBookCollections"
-                android:background="@android:color/transparent"
-                android:padding="10dp"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
                 android:divider="@drawable/empty_tall_divider"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                android:padding="10dp" />
         </HorizontalScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

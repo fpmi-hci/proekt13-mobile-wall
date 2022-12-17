@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/tvMoodHeader"
+        android:id="@+id/tvDiaryHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/menuLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMoodHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDiaryHeader" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menuLayout"
@@ -81,5 +81,36 @@
             app:layout_constraintStart_toEndOf="@+id/btMenuTab2"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDiaryDays"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDiaryTrack" />
+
+    <Button
+        android:id="@+id/btDiaryTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+
+        android:background="@drawable/button"
+        android:fontFamily="@font/blogger_sans_bold"
+        android:text="@string/track_a_new_drink"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiaryHeader" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
